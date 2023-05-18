@@ -1,6 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
 import Mockman from "mockman-js";
+
+import "./App.css";
+import { SearchBar } from "./Components/Searchbar/SearchBar";
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<h1>Hello</h1>} />
         <Route path="/mockman" element={<Mockman />} />
+        <Route path="/search" element={<SearchBar />} />
       </Routes>
     </div>
   );

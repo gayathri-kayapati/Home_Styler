@@ -1,16 +1,24 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
+import { createRoot } from "react-dom/client";
 import { makeServer } from "./server";
 import { BrowserRouter as Router } from "react-router-dom";
 
+import "./index.css";
+import App from "./App";
+import {
+  ProductsDataProvider,
+  ProductsData,
+} from "./Contexts/ProductsDataProvider";
+
 // Call make Server
 makeServer();
+export { ProductsData };
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = createRoot(document.getElementById("root"));
 root.render(
   <Router>
-    <App />
+    <ProductsDataProvider>
+      <App />
+    </ProductsDataProvider>
   </Router>
 );
