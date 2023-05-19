@@ -1,7 +1,15 @@
 .searchBar {
+  border: 1px solid grey;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0.5rem;
   border-radius: 5px;
   width: 400px;
+}
+.search {
+  border: none;
+}
+
+.search:focus {
+  outline: none;
 }

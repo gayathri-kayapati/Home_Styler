@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { useContext } from "react";
+import { BsSearch } from "react-icons/bs";
 
 import { ProductsData } from "../../Contexts/ProductsDataProvider";
 import "./searchBar.css";
 
-export function SearchBar() {
+export default function SearchBar() {
   const { products } = useContext(ProductsData);
   const [searchInput, setSearchInput] = useState("");
   //   const [filterdProducts, setFilterdProducts] = useState([]);
@@ -20,9 +21,9 @@ export function SearchBar() {
     }
   };
   return (
-    <div>
+    <div className="searchBar">
       <input
-        className="searchBar"
+        className="search"
         type="text"
         placeholder="Search here"
         onChange={handleChange}
@@ -31,6 +32,7 @@ export function SearchBar() {
       {/* {filterdProducts.map((product) => (
         <p>{product.title}</p>
       ))} */}
+      <BsSearch />
     </div>
   );
 }

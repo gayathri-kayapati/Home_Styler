@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from "react";
 
 export const ProductsData = createContext();
 
-export function ProductsDataProvider({ children }) {
+export default function ProductsDataProvider({ children }) {
   const [products, setProducts] = useState([]);
   console.log(products);
   const getProductsData = async () => {
