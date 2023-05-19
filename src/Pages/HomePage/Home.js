@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <img src="heroImage" alt="hero image" />
+      <img src={heroImage} alt="hero image" />
     </div>
   );
 }
