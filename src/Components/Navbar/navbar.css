@@ -8,6 +8,7 @@
 .navpill {
   padding: 1.5rem;
   font-size: xx-large;
+  position: relative;
 }
 .navpill:hover {
   color: darkmagenta;
@@ -24,11 +25,13 @@
   visibility: hidden;
   position: absolute;
   font-size: medium;
-  background-color: white;
-  color: rgb(195, 122, 221);
+  color: rgb(84, 5, 113);
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
+  right: 10px;
+  bottom: 0;
+  transition: all 0.5s ease;
 }
 .navpill:hover .tooltip {
   visibility: visible;
