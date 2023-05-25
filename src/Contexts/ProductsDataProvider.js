@@ -4,7 +4,6 @@ export const ProductsData = createContext();
 
 export default function ProductsDataProvider({ children }) {
   const [products, setProducts] = useState([]);
-  console.log(products);
   const getProductsData = async () => {
     try {
       const response = await fetch("/api/products");
