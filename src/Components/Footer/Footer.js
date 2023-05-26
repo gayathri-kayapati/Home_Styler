@@ -18,7 +18,7 @@ export default function Footer() {
           <p>Privacy Policy</p>
           <p>Responsible Disclosure</p>
         </div>
-        <div className="sectionChild icons">
+        <div className="sectionChild">
           <h4>FOLLOW US</h4>
           <NavLink
             className="socialMediaIcons"
@@ -28,7 +28,7 @@ export default function Footer() {
             <BsInstagram />
           </NavLink>
           <NavLink
-            className="socialMediaIcons"
+            className="socialMediaIcons facebookIcon"
             target="_blank"
             to="https://www.facebook.com/feed/"
           >

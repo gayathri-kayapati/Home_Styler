@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   background: linear-gradient(#c37add, #8b008b);
-  /* background-color: rgb(195, 122, 221); */
   padding: 1.5rem;
 }
 
@@ -12,9 +11,7 @@
   position: relative;
   color: black;
 }
-/* .navpill:hover {
-  color: 
-} */
+
 .nav-brand {
   color: black;
   font-size: x-large;

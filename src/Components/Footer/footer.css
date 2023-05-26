@@ -8,10 +8,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-/* .icons {
-  display: flex;
-  flex-direction: column;
-} */
+
 .socialMediaIcons {
   color: black;
   font-size: x-large;

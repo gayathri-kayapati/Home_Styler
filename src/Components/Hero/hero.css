@@ -1,0 +1,16 @@
+.hero {
+  position: relative;
+}
+.button {
+  position: absolute;
+  font-weight: 600;
+  font-size: medium;
+  background: linear-gradient(#c37add, #8b008b);
+  /* background: linear-gradient(#d1bf37, #f9351b); */
+  border-radius: 6px;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+  margin: 0;
+  bottom: 100px;
+  left: 400px;
+  padding: 10px 10px;
+}

@@ -1,10 +1,10 @@
 import { v4 as uuid } from "uuid";
-import decor from "../../Images/decor.jpg";
-import kichen from "../../Images/kichen.jpg";
-import bedding from "../../Images/bedding.jpg";
-import storage from "../../Images/storage.jpg";
-import home_essentials from "../../Images/home_essentials.jpg";
-import Appliances from "../../Images/Appliances.webp";
+import decor from "../../Images/categories/decor.jpg";
+import kichen from "../../Images/categories/kichen.jpg";
+import bedding from "../../Images/categories/bedding.jpg";
+import storage from "../../Images/categories/storage.jpg";
+import home_essentials from "../../Images/categories/home_essentials.jpg";
+import Appliances from "../../Images/categories/Appliances.webp";
 
 /**
  * Category Database can be added here.
