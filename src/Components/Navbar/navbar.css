@@ -1,7 +1,8 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(195, 122, 221);
+  background: linear-gradient(#c37add, #8b008b);
+  /* background-color: rgb(195, 122, 221); */
   padding: 1.5rem;
 }
 
@@ -9,11 +10,13 @@
   padding: 1.5rem;
   font-size: xx-large;
   position: relative;
+  color: black;
 }
-.navpill:hover {
-  color: darkmagenta;
-}
+/* .navpill:hover {
+  color: 
+} */
 .nav-brand {
+  color: black;
   font-size: x-large;
   font-weight: 800;
   text-decoration: none;

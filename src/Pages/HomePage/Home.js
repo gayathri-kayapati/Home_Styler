@@ -4,7 +4,7 @@ import "./Home.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import heroImage from "../../Images/heroImage.webp";
 import CategoriesPage from "../Categories/Categories";
-import CategoryCard from "../../Components/Categorycard/CategoryCard";
+import Footer from "../../Components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
         <Link to="/productsListPage">Shop now</Link>
       </div>
       <CategoriesPage />
+      <Footer />
     </div>
   );
 }
