@@ -1,0 +1,23 @@
+.footer {
+  background: linear-gradient(#c37add, #8b008b);
+  padding: 10px;
+  margin: auto;
+}
+.footerSection {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+/* .icons {
+  display: flex;
+  flex-direction: column;
+} */
+.socialMediaIcons {
+  color: black;
+  font-size: x-large;
+  flex-direction: column;
+  padding: 10px;
+}
+.policies {
+  padding-top: 45px;
+}
