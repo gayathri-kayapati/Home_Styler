@@ -1,0 +1,38 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(195, 122, 221);
+  padding: 1.5rem;
+}
+
+.navpill {
+  padding: 1.5rem;
+  font-size: xx-large;
+  position: relative;
+}
+.navpill:hover {
+  color: darkmagenta;
+}
+.nav-brand {
+  font-size: x-large;
+  font-weight: 800;
+  text-decoration: none;
+}
+.nav-brand:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  font-size: medium;
+  color: rgb(84, 5, 113);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  right: 10px;
+  bottom: 0;
+  transition: all 0.5s ease;
+}
+.navpill:hover .tooltip {
+  visibility: visible;
+}
