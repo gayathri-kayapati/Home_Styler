@@ -8,16 +8,22 @@ import App from "./App";
 import ProductsDataProvider, {
   ProductsData,
 } from "./Contexts/ProductsDataProvider";
+import CategoriesDataProvider, {
+  CategoriesData,
+} from "./Contexts/CategoriesDataProvider";
 
 // Call make Server
 makeServer();
 export { ProductsData };
+export { CategoriesData };
 
 const root = createRoot(document.getElementById("root"));
 root.render(
   <Router>
     <ProductsDataProvider>
-      <App />
+      <CategoriesDataProvider>
+        <App />
+      </CategoriesDataProvider>
     </ProductsDataProvider>
   </Router>
 );
