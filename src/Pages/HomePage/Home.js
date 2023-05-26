@@ -9,11 +9,11 @@ import CategoryCard from "../../Components/Categorycard/CategoryCard";
 export default function Home() {
   return (
     <div>
-      {/* <Navbar />
+      <Navbar />
       <div className="container">
         <img src={heroImage} alt="hero" height="70%" width="100%" />
         <Link to="/productsListPage">Shop now</Link>
-      </div> */}
+      </div>
       <CategoriesPage />
     </div>
   );
