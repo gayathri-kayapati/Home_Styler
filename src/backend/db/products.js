@@ -44,7 +44,7 @@ export const products = [
     description: "H-L - 5552-3P Glass",
     rating: "5.0",
     actualPrice: "₹3,360",
-    discountPrice: "MRP₹8,400",
+    discountPrice: "₹8,400",
     discountPercentage: "60%",
     categoryName: "decor",
     details:
@@ -57,7 +57,7 @@ export const products = [
     description: "Ultimate Pro 24cm Frying Pan with Por spout",
     rating: "4.0",
     actualPrice: "₹8,460",
-    discountPrice: "MRP ₹9,400",
+    discountPrice: "₹9,400",
     discountPercentage: "10%",
     categoryName: "kichen & Dinning",
     details:
@@ -83,7 +83,7 @@ export const products = [
     description: "Pack of 3 Textured Glass Jar with Wooden Lid",
     rating: "3.2",
     actualPrice: "₹1,575",
-    discountPrice: "MRP ₹2,863",
+    discountPrice: "₹2,863",
     discountPercentage: "45% ",
     categoryName: "storage",
     details:
@@ -97,7 +97,7 @@ export const products = [
       "Hand Block Quilted Pure Cotton Animal Printed Cushion Cover Set Of 2",
     rating: "5.0",
     actualPrice: "₹925",
-    discountPrice: "MRP ₹2,499",
+    discountPrice: "₹2,499",
     discountPercentage: "63%",
     categoryName: "bedding",
     details:
@@ -123,7 +123,7 @@ export const products = [
     description: "Zoe Gold Metal Pot (Pack Of 2)",
     rating: "",
     actualPrice: "₹602",
-    discountPrice: "MRP ₹1,399",
+    discountPrice: "₹1,399",
     discountPercentage: "57%",
     categoryName: "decor",
     details:
@@ -137,7 +137,7 @@ export const products = [
       "Brown Dining Table Kitchen Placemats Set of 7 (6 Mat -33 x 45 Cm, 1 Runner 33 x 120 Cm)",
     rating: "",
     actualPrice: "₹1,200",
-    discountPrice: "MRP ₹1,999",
+    discountPrice: "₹1,999",
     discountPercentage: "40%",
     categoryName: "kichen & Dinning",
     details:
@@ -150,7 +150,7 @@ export const products = [
     description: "DEEBOT U2 PRO Robot Vacuum Cleaner",
     rating: "",
     actualPrice: "₹21,901",
-    discountPrice: "MRP ₹61,900",
+    discountPrice: "₹61,900",
     discountPercentage: "65%",
     categoryName: "appliances",
     details:
@@ -163,7 +163,7 @@ export const products = [
     description: "Rumba Double Comforter Blue12",
     rating: "4.2",
     actualPrice: "₹1,359",
-    discountPrice: "MRP ₹3,999",
+    discountPrice: "₹3,999",
     discountPercentage: "66%",
     categoryName: "bedding",
     details:
@@ -189,7 +189,7 @@ export const products = [
     description: "Purvanchal Throw Grey",
     rating: "",
     actualPrice: "₹2,320",
-    discountPrice: "MRP ₹2,899",
+    discountPrice: "₹2,899",
     discountPercentage: "20%",
     categoryName: "bedding",
     details:
@@ -203,7 +203,7 @@ export const products = [
       "Exe Stainless Steel Lunch Box for Office & School, 3 Containers, Blue",
     rating: "",
     actualPrice: "₹425",
-    discountPrice: "MRP ₹499",
+    discountPrice: "₹499",
     discountPercentage: "15%",
     categoryName: "kichen & Dinning",
     details:
@@ -216,7 +216,7 @@ export const products = [
     description: "Hummingbird Vines Hardbound Planner",
     rating: "",
     actualPrice: "₹999",
-    discountPrice: "MRP ₹1,699",
+    discountPrice: "₹1,699",
     discountPercentage: "41",
     categoryName: "home essentials",
     details:
@@ -230,7 +230,7 @@ export const products = [
       "2111B Ultrasonic Cool Mist Humidifier for Home, Office (2.3L, Solid Pink)",
     rating: "5.0",
     actualPrice: "₹1,967",
-    discountPrice: "MRP ₹2,429",
+    discountPrice: "₹2,429",
     discountPercentage: "19%",
     categoryName: "appliances",
     details:
@@ -256,7 +256,7 @@ export const products = [
     description: "GC104 01 1100 W Dry Iron",
     rating: "",
     actualPrice: "₹1,169",
-    discountPrice: "MRP ₹1,259",
+    discountPrice: "₹1,259",
     discountPercentage: "7%",
     categoryName: "appliances",
     details:
@@ -282,7 +282,7 @@ export const products = [
     description: "Memory Wall Collage Photo Frame - Set of 10 Photo Frames",
     rating: "",
     actualPrice: "₹1,800",
-    discountPrice: "MRP ₹ 3,999",
+    discountPrice: "₹ 3,999",
     discountPercentage: "55%",
     categoryName: "decor",
     details:
@@ -295,7 +295,7 @@ export const products = [
     description: "Kitchen Shears Multi-Purpose Scissors FUSO",
     rating: "4.6",
     actualPrice: "₹654",
-    discountPrice: "MRP ₹688",
+    discountPrice: "₹688",
     discountPercentage: "5%",
     categoryName: "home essentials",
     details:
@@ -308,7 +308,7 @@ export const products = [
     description: "B1700 Cold Press Juicer (Red)",
     rating: "5.0",
     actualPrice: "₹21,903",
-    discountPrice: "MRP ₹35,900",
+    discountPrice: "₹35,900",
     discountPercentage: "39%",
     categoryName: "kichen & Dinning",
     details:
@@ -321,7 +321,7 @@ export const products = [
     description: "Cushion Fillers 12 x 12 Inches - Pack of 3",
     rating: "",
     actualPrice: "₹657",
-    discountPrice: "MRP ₹1,095",
+    discountPrice: "₹1,095",
     discountPercentage: "40%",
     categoryName: "bedding",
     details:
@@ -335,7 +335,7 @@ export const products = [
       "Ruby 4 Burner Manual Ignition Glass Cooktop, Black Toughened Glass",
     rating: "3.4",
     actualPrice: "₹4,299",
-    discountPrice: "MRP ₹10,000",
+    discountPrice: "₹10,000",
     discountPercentage: "57%",
     categoryName: "kichen & Dinning",
     details:
@@ -348,7 +348,7 @@ export const products = [
     description: "Braided Dustbin Brown",
     rating: "5.0",
     actualPrice: "₹2,695",
-    discountPrice: "MRP ₹3,750",
+    discountPrice: "₹3,750",
     discountPercentage: "28% ",
     categoryName: "storage",
     details:
@@ -361,7 +361,7 @@ export const products = [
     description: "Adam Nesting Table (Set of 2)",
     rating: "4.2",
     actualPrice: "₹11,990",
-    discountPrice: "MRP ₹16,000",
+    discountPrice: "₹16,000",
     discountPercentage: "25%",
     categoryName: "decor",
     details:
