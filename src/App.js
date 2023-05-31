@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/mockman" element={<Mockman />} />
         <Route path="/" element={<Home />} />
-        <Route path="/productsList" element={<ProductsListPage />} />
+        <Route path="/productsListPage" element={<ProductsListPage />} />
       </Routes>
     </div>
   );
