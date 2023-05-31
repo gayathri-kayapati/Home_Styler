@@ -35,7 +35,7 @@
 .price {
   padding-right: 5px;
 }
-.discountPrice {
+.actualPrice {
   text-decoration: line-through;
   color: gray;
 }
