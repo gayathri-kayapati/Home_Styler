@@ -1,0 +1,8 @@
+.primaryButton{
+    background-color:black ;
+    color: white;
+    cursor: pointer;
+    min-width: 350px;
+    height:30px;
+    margin:7px
+}

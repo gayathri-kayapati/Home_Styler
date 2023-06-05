@@ -1,0 +1,8 @@
+.secondaryButton{
+    background-color:white;
+    color: black;
+    cursor: pointer;
+    min-width: 350px;
+    height:30px;
+    margin:7px
+}

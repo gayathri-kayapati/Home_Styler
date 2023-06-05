@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.productDetailCard {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 40%;
+    height: 500px;
+    margin:  50px auto;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+/*.productImage{*/
+/*    max-width: 50%;*/
+/*}*/
+.productImage{
+    position: static;
+}
+.productDescription {
+    padding: 5px 5px;
+}
+.title {
+    font-weight: 600;
+}
+.price {
+    padding-right: 5px;
+}
+.discountPrice{
+    font-weight: bold;
+}
+.actualPrice {
+    text-decoration: line-through;
+    color: gray;
+}
+.discountPercentage {
+    color: green;
+}
+.productDetails{
+    font-size: small;
+}
+.taxs{
+    color: gray;
+    font-size: small;
+}
+.star{
+    padding-top: 4px;
+}
+.rating{
+    border: 0.5px solid lightgray;
+    width:50px;
+    text-align: center;
+    padding-bottom: 0;
+}
