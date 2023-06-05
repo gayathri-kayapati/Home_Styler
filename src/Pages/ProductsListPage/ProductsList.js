@@ -18,7 +18,7 @@ export default function ProductsListPage() {
       <div className="productsContainer">
         {products?.map((product) => (
           <div onClick={() => redirect(product.id)}>
-            <ProductCard product={product} className="product" />
+            <ProductCard product={product} />
           </div>
         ))}
       </div>

@@ -1,10 +1,8 @@
-*{
-  color: white;
-}
 .footer {
   background: linear-gradient(#02122f, #0f44a3);
   padding: 20px;
   margin: auto;
+  color: white;
 }
 .footerSection {
   display: flex;

@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 
-import { FcHome } from "react-icons/fc";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsCart3 } from "react-icons/bs";
 import { MdOutlineAccountCircle } from "react-icons/md";
@@ -12,7 +11,6 @@ export default function Navbar() {
     <nav className="nav">
       <section>
         <NavLink className="nav-brand" to="/">
-          <FcHome />
           Home Styler
         </NavLink>
       </section>

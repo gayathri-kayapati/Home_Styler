@@ -19,7 +19,7 @@
   text-decoration: none;
 }
 .nav-brand:hover {
-  text-shadow: 0 0 5px #02122f, 0 0 10px #02122f  ;
+  text-shadow: 0 0 5px #02122f, 0 0 10px #fff  ;
 }
 .tooltip {
   visibility: hidden;

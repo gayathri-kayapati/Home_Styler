@@ -13,32 +13,32 @@ import Appliances from "../../Images/categories/Appliances.webp";
 
 export const categories = [
   {
-    _id: uuid(),
+    id: uuid(),
     categoryName: "Decor",
     categoryImage: decor,
   },
   {
-    _id: uuid(),
+    id: uuid(),
     categoryName: "Kitchen & Dining",
     categoryImage: kichen,
   },
   {
-    _id: uuid(),
+    id: uuid(),
     categoryName: "Bedding",
     categoryImage: bedding,
   },
   {
-    _id: uuid(),
+    id: uuid(),
     categoryName: "Storage",
     categoryImage: storage,
   },
   {
-    _id: uuid(),
+    id: uuid(),
     categoryName: "Home Essentials",
     categoryImage: home_essentials,
   },
   {
-    _id: uuid(),
+    id: uuid(),
     categoryName: "Appliances",
     categoryImage: Appliances,
   },
