@@ -13,7 +13,7 @@ export default function ProductsListPage() {
     navigate(`/products/${id}`);
   };
   return (
-    <div>
+    <div className="page">
       <Navbar />
       <div className="productsContainer">
         {products?.map((product) => (
