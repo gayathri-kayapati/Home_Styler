@@ -1,0 +1,122 @@
+.page{
+    background-color: #e2e1e1;
+}
+.cartItems{
+    max-width: 50%;
+    border: 1px solid rgb(205, 211, 216);
+    background-color: white;
+    margin: 1rem 1.25rem;
+    height: auto;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    padding:20px;
+}
+.discountPrice{
+    font-size: large;
+}
+.actualPrice{
+    text-decoration: line-through;
+    padding: 0 8px;
+}
+.discountPercentage{
+    color: green;
+}
+.quantityButtons{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    width: 28px;
+    height: 28px;
+    background: #edebeb;
+    display: inline-block;
+    border: 1px solid #c2c2c2;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.cartItemImage{
+    width:150px;
+}
+.quantityBtn{
+    width: 100px;
+    margin: 4px;
+    padding: 4px;
+    border: 1px solid #c2c2c2;
+    background: #ffffff;
+
+}
+.itemDetails{
+    text-align: left;
+    padding-left: 10px;
+    line-height: 30px;
+}
+
+.placeOrderContainer{
+    background-color: white;
+    border-top: 1px solid rgb(205, 211, 216);
+    text-align: end;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+.placeOrder{
+    margin: 30px;
+    max-width: 50%;
+    padding: 5px;
+    color: white;
+    background: linear-gradient(#02122f, #0f44a3);
+}
+
+.priceDetails{
+    border: 1px solid rgb(205, 211, 216);
+    text-align: left;
+    background-color: white;
+    border-radius: 4px;
+    margin: 1rem 1.25rem;
+    padding: 0.75rem 1rem;
+    overflow: hidden;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+}
+.hr2{
+    border-top: 1px dashed rgb(205, 211, 216);
+}
+.priceDetailsHeading{
+    font-weight: bold;
+}
+.totalAmount{
+    font-weight: bold;
+    padding: 1rem;
+}
+.displayPrice{
+    padding: 10px;
+}
+.savingAmount{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+    font-weight: 400;
+    align-items: center;
+    border: 1px solid rgb(205, 211, 216);
+    background: #e7f8ce;
+    padding: 6px 0.5rem;
+    margin: 1rem;
+}
+.circleIcon{
+    padding-right: 0.5rem;
+    color: green;
+}
+.saftyMessage{
+    display: flex;
+    background: #e9e7e7;
+    font-size: 13px;
+}
+.msg{
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+}
+.msgicon{
+    width:20px;
+    font-size: larger;
+}

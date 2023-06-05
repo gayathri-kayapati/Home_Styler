@@ -12,6 +12,8 @@
   position: relative;
   text-align: left;
   position: relative;
+  background-color: white;
+
 }
 .productCard:hover {
   box-shadow: 5px 10px 10px rgb(0 0 0 / 0.2);
