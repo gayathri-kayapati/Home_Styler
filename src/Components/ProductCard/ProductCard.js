@@ -3,7 +3,7 @@ import { AiOutlineHeart } from "react-icons/ai";
 
 export default function ProductCard({ product }) {
   const {
-    _id,
+    id,
     image,
     title,
     description,
@@ -12,7 +12,7 @@ export default function ProductCard({ product }) {
     discountPercentage,
   } = product;
   return (
-    <div key={_id} className="productCard">
+    <div key={id} className="productCard">
       <div className="circle">
         <AiOutlineHeart />
       </div>

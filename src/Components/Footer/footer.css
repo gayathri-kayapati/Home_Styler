@@ -1,5 +1,8 @@
+*{
+  color: white;
+}
 .footer {
-  background: linear-gradient(#c37add, #8b008b);
+  background: linear-gradient(#02122f, #0f44a3);
   padding: 20px;
   margin: auto;
 }
@@ -11,7 +14,7 @@
 }
 
 .socialMediaIcons {
-  color: black;
+  color: white;
   font-size: x-large;
   flex-direction: column;
   padding: 10px;

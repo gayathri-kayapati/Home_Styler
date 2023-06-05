@@ -11,18 +11,23 @@ import ProductsDataProvider, {
 import CategoriesDataProvider, {
   CategoriesData,
 } from "./Contexts/CategoriesDataProvider";
-
+import CartContextProvider, {
+  CartContext,
+} from "./Contexts/CartContextProvider";
 // Call make Server
 makeServer();
 export { ProductsData };
 export { CategoriesData };
+export { CartContext };
 
 const root = createRoot(document.getElementById("root"));
 root.render(
   <Router>
     <ProductsDataProvider>
       <CategoriesDataProvider>
-        <App />
+        <CartContextProvider>
+          <App />
+        </CartContextProvider>
       </CategoriesDataProvider>
     </ProductsDataProvider>
   </Router>

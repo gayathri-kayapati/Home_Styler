@@ -1,5 +1,5 @@
 import { useContext } from "react";
-
+import { useNavigate } from "react-router-dom";
 import "./productsList.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import { ProductsData } from "../../Contexts/ProductsDataProvider";
@@ -7,14 +7,19 @@ import ProductCard from "../../Components/ProductCard/ProductCard";
 import Footer from "../../Components/Footer/Footer";
 
 export default function ProductsListPage() {
+  const navigate = useNavigate();
   const { products } = useContext(ProductsData);
-
+  const redirect = (id) => {
+    navigate(`/products/${id}`);
+  };
   return (
     <div>
       <Navbar />
       <div className="productsContainer">
         {products?.map((product) => (
-          <ProductCard product={product} className="product" />
+          <div onClick={() => redirect(product.id)}>
+            <ProductCard product={product} className="product" />
+          </div>
         ))}
       </div>
       <Footer />

@@ -5,10 +5,11 @@
   position: absolute;
   font-weight: 600;
   font-size: medium;
-  background: linear-gradient(#c37add, #8b008b);
+  background: linear-gradient(#02122f, #0f44a3);
   /* background: linear-gradient(#d1bf37, #f9351b); */
   border-radius: 6px;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+  color: white;
+  text-shadow: 0 0 5px #02122f, 0 0 10px #02122f;
   margin: 0;
   bottom: 80px;
   left: 300px;

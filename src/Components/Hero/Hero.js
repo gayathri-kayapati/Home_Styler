@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div className="hero">
       <img src={heroImage} alt="hero" height="70%" width="100%" />
-      <Link to="/productsListPage">
+      <Link to="/products">
         <button className="button">Shop Now</button>
       </Link>
     </div>
