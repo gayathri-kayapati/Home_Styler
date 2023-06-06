@@ -1,4 +1,3 @@
-import { v4 as uuid } from "uuid";
 import decor from "../../Images/categories/decor.jpg";
 import kichen from "../../Images/categories/kichen.jpg";
 import bedding from "../../Images/categories/bedding.jpg";
@@ -13,32 +12,32 @@ import Appliances from "../../Images/categories/Appliances.webp";
 
 export const categories = [
   {
-    id: uuid(),
+    id: "8ce2f9f1-55cd-4563-bcf1-d3a9f46a48d4",
     categoryName: "Decor",
     categoryImage: decor,
   },
   {
-    id: uuid(),
+    id: "3745206a-bdaf-4dd0-955b-0ba05274817b",
     categoryName: "Kitchen & Dining",
     categoryImage: kichen,
   },
   {
-    id: uuid(),
+    id: "59357c76-5a9b-4022-bda2-09cd436e7cfe",
     categoryName: "Bedding",
     categoryImage: bedding,
   },
   {
-    id: uuid(),
+    id: "13370e5a-db3e-48c6-983b-f5c04156a789",
     categoryName: "Storage",
     categoryImage: storage,
   },
   {
-    id: uuid(),
+    id: "55ddbe68-1378-4d0c-b432-0c7898b2b74f",
     categoryName: "Home Essentials",
     categoryImage: home_essentials,
   },
   {
-    id: uuid(),
+    id: "875a679c-4692-4503-a393-d221f027f582",
     categoryName: "Appliances",
     categoryImage: Appliances,
   },

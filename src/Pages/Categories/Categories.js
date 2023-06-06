@@ -21,7 +21,7 @@ export default function CategoriesPage() {
   return (
     <div className="container">
       {categories?.map((category) => (
-        <div onClick={() => redirect()}>
+        <div key={category.id} onClick={() => redirect()}>
           <CategoryCard category={category} />
         </div>
       ))}
