@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { AiFillSecurityScan } from "react-icons/ai";
 import { TbTruckReturn } from "react-icons/tb";
@@ -8,10 +8,28 @@ import SecondaryButton from "../../Components/Buttons/SecondaryButton/SecondaryB
 import { CartContext } from "../../Contexts/CartContextProvider";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
+import { WishlistContext } from "../../Contexts/WishlistContextProvider";
 
 export default function CartItems() {
-  const [quantity, setQuantity] = useState(1);
-  const { cart } = useContext(CartContext);
+  const {
+    cart,
+    handleRemoveCartItem,
+    handleIncreaseQuantity,
+    handleDecreaseQuantity,
+  } = useContext(CartContext);
+  const { handleWishlistItems } = useContext(WishlistContext);
+
+  const totalActualPrice = cart.reduce(
+    (sumOfActualPrice, product) =>
+      sumOfActualPrice + product.quantity * product.actualPrice,
+    0
+  );
+  const totalDiscountedPrice = cart.reduce(
+    (sumOfDiscountPrice, product) =>
+      sumOfDiscountPrice + product.quantity * product.discountPrice,
+    0
+  );
+  const discount = totalActualPrice - totalDiscountedPrice;
 
   return (
     <div className="page">
@@ -31,18 +49,20 @@ export default function CartItems() {
                     <span>
                       <button
                         className="btn"
-                        onClick={() => setQuantity(quantity + 1)}
+                        onClick={() => handleIncreaseQuantity(product.id)}
                       >
                         +
                       </button>
                     </span>
                     <span>
-                      <button className="quantityBtn">{quantity}</button>
+                      <button className="quantityBtn">
+                        {product.quantity}
+                      </button>
                     </span>
                     <span>
                       <button
                         className="btn"
-                        onClick={() => setQuantity(quantity - 1)}
+                        onClick={() => handleDecreaseQuantity(product)}
                       >
                         -
                       </button>
@@ -64,10 +84,16 @@ export default function CartItems() {
                     </span>
                   </div>
                   <span>
-                    <SecondaryButton name="Remove" />
+                    <SecondaryButton
+                      onClick={handleRemoveCartItem}
+                      name="Remove"
+                    />
                   </span>
                   <span>
-                    <SecondaryButton name="Move to Wishlist" />
+                    <SecondaryButton
+                      onclick={() => handleWishlistItems(product)}
+                      name="Move to Wishlist"
+                    />
                   </span>
                 </div>
               </div>
@@ -80,17 +106,28 @@ export default function CartItems() {
         <div className="priceDetails">
           <p className="priceDetailsHeading">PRICE DETAILS</p>
           <hr />
-          <p className="displayPrice">Price(no of items) </p>
-          <p className="displayPrice">Discount </p>
-          <p className="displayPrice">Delivery Charges </p>
+          <div className="displayPrice">
+            <p>Price({cart.length} items)</p>
+            <span>₹{totalActualPrice}</span>
+          </div>
+          <div className="displayPrice">
+            <p>Discount</p>
+            <span>- ₹{discount}</span>
+          </div>
+          <div className="displayPrice">
+            <p>Delivery Charges</p>
+            <span style={{ color: "green" }}>Free</span>
+          </div>
+
           <hr className="hr2" />
-          <p className="totalAmount">Total Amount</p>
+          <p className="totalAmount">Total Amount </p>
+          <span>₹{totalDiscountedPrice}</span>
           <hr className="hr2" />
           <div className="savingAmount">
             <span className="circleIcon">
               <BsFillCheckCircleFill />
             </span>
-            Yay! You are saving Discount amount
+            Yay! You are saving ₹{discount}
           </div>
           <section className="safetyMessage">
             <div className="msg">
