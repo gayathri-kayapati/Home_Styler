@@ -1,4 +1,8 @@
 .page{
     background-color: #e2e1e1;
-    min-height: calc(100vh - 287px);
+}
+.wishlistContainer {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
 }
