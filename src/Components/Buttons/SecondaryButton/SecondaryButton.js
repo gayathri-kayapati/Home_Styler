@@ -1,8 +1,10 @@
 import "./secondaryButton.css";
-export default function SecondaryButton({ name }) {
+export default function SecondaryButton({ name, clickHandler }) {
   return (
     <div>
-      <button className="secondaryButton">{name}</button>
+      <button onClick={clickHandler} className="secondaryButton">
+        {name}
+      </button>
     </div>
   );
 }

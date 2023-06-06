@@ -1,10 +1,8 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import "./productsList.css";
-import Navbar from "../../Components/Navbar/Navbar";
 import { ProductsData } from "../../Contexts/ProductsDataProvider";
 import ProductCard from "../../Components/ProductCard/ProductCard";
-import Footer from "../../Components/Footer/Footer";
 
 export default function ProductsListPage() {
   const navigate = useNavigate();
@@ -14,7 +12,6 @@ export default function ProductsListPage() {
   };
   return (
     <div className="page">
-      <Navbar />
       <div className="productsContainer">
         {products?.map((product) => (
           <div onClick={() => redirect(product.id)}>
@@ -22,7 +19,6 @@ export default function ProductsListPage() {
           </div>
         ))}
       </div>
-      <Footer />
     </div>
   );
 }

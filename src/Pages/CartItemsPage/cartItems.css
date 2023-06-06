@@ -1,5 +1,6 @@
 .page{
     background-color: #e2e1e1;
+    min-height: calc(100vh - 287px);
 }
 .cartItems{
     max-width: 50%;
