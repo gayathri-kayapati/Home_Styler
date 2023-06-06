@@ -14,11 +14,15 @@ import CategoriesDataProvider, {
 import CartContextProvider, {
   CartContext,
 } from "./Contexts/CartContextProvider";
+import WishlistContextProvider, {
+  WishlistContext,
+} from "./Contexts/WishlistContextProvider";
 // Call make Server
 makeServer();
 export { ProductsData };
 export { CategoriesData };
 export { CartContext };
+export { WishlistContext };
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -26,7 +30,9 @@ root.render(
     <ProductsDataProvider>
       <CategoriesDataProvider>
         <CartContextProvider>
-          <App />
+          <WishlistContextProvider>
+            <App />
+          </WishlistContextProvider>
         </CartContextProvider>
       </CategoriesDataProvider>
     </ProductsDataProvider>
