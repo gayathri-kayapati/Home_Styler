@@ -9,6 +9,8 @@ import lighting from "../../Images/decor/lighting.webp";
 import SecondaryButton from "../../Components/Buttons/SecondaryButton/SecondaryButton";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
+import cookWare from "../../Images/kichenAndDinning/cookWare.webp";
+import candles from "../../Images/decor/candles.webp";
 
 const cartItem = [
   {
@@ -23,6 +25,32 @@ const cartItem = [
     categoryName: "decor",
     details:
       "Black Metal & Luster Glass Quirky Design Cluster Light by MFD HOME FURNISHING",
+  },
+  {
+    id: uuid(),
+    image: cookWare,
+    title: "Zyliss",
+    description: "Ultimate Pro 24cm Frying Pan with Por spout",
+    rating: "4.0",
+    discountPrice: "₹8,460",
+    actualPrice: "₹9,400",
+    discountPercentage: "10%",
+    categoryName: "kichen & Dinning",
+    details:
+      "Zyliss best cookware yet! Zyliss 24cm frying pan feature advanced ALPINE CRYSTALS non-stick Swiss technology that delivers superior non-stick performance and healthier cooking, eliminating the need for oil or butter. With the hard anodized body, Zyliss Ultimate PRO Frying Pans are reliable, designed to withstand everyday use and safe for use with metal tools.Zyliss Swiss-engineered PFAO free non-stick coating: nothing sticks and no oil or butter needed!With a durable hard-anodized body, this professional frying pan is hard wearing and safe for use with metal tools.The stainless steel induction base is suitable for all hobs, including induction.Ergonomic, stainless steel handle for a durable and comfortable grip, and oven safe up to 230°C/450°F.Pouring spout for convenient transfer of liquids, such as fats, oils, or sauces.",
+  },
+  {
+    id: uuid(),
+    image: candles,
+    title: "Novo Koyo",
+    description: "God's Plan Travel Tin Candle",
+    rating: "4.5",
+    discountPrice: "₹1,100",
+    actualPrice: "",
+    discountPercentage: "",
+    categoryName: "decor",
+    details:
+      "Novo Koyo God's Plan Travel Tin candle is a complex concoction of Sandalwood Musk & Vanilla. Soothing yet impactful, this candle is for the ones who love the sublimity of Vanilla while appreciating the depth of sandalwood. Carry it on a stay-cation or use it for a date night! Please burn the candle for 2 hours, the first time that you'd light it, for the candle to burn in the best possible way & to avoid tunelling in the jar. (L x W x H): 3.5 x 3.5 x 2.5 inches",
   },
 ];
 export default function CartItems() {
@@ -106,7 +134,7 @@ export default function CartItems() {
             </span>
             Yay! You are saving Discount amount
           </div>
-          <section className="saftyMessage">
+          <section className="safetyMessage">
             <div className="msg">
               <span className="msgicon">
                 <BsFillCheckCircleFill />
