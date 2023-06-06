@@ -1,12 +1,12 @@
 .page{
     background-color: #e2e1e1;
+    min-height: calc(100vh - 287px);
 }
 .cartItems{
     max-width: 50%;
     border: 1px solid rgb(205, 211, 216);
     background-color: white;
     margin: 1rem 1.25rem;
-    height: auto;
 }
 .item{
     display: flex;
@@ -88,9 +88,7 @@
     font-weight: bold;
     padding: 1rem;
 }
-.displayPrice{
-    padding: 10px;
-}
+
 .savingAmount{
     display: flex;
     justify-content: flex-start;
@@ -106,7 +104,7 @@
     padding-right: 0.5rem;
     color: green;
 }
-.saftyMessage{
+.safetyMessage{
     display: flex;
     background: #e9e7e7;
     font-size: 13px;
@@ -119,4 +117,9 @@
 .msgicon{
     width:20px;
     font-size: larger;
+}
+.displayPrice{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
 }
