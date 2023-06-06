@@ -4,13 +4,13 @@ import { AiFillSecurityScan } from "react-icons/ai";
 import { TbTruckReturn } from "react-icons/tb";
 import { useNavigate } from "react-router-dom";
 
-import "./cartItems.css";
+import "./cart.css";
 import SecondaryButton from "../../Components/Buttons/SecondaryButton/SecondaryButton";
 import { CartContext } from "../../Contexts/CartContextProvider";
 import { WishlistContext } from "../../Contexts/WishlistContextProvider";
 import PrimaryButton from "../../Components/Buttons/PrimaryButton/PrimaryButton";
 
-export default function CartItems() {
+export default function Cart() {
   const navigate = useNavigate();
   const {
     cart,
@@ -39,7 +39,7 @@ export default function CartItems() {
         <>
           <p>
             Your cart is empty! Looks like you haven’t added anything to your
-            bag. Let’s change that.
+            cart. Let’s change that.
           </p>
           <PrimaryButton clickHandler={handlerToBack} name="Back to shopping" />
         </>

@@ -1,7 +1,6 @@
 import "./wishlistCard.css";
 import { RxCrossCircled } from "react-icons/rx";
 import { useContext } from "react";
-import SecondaryButton from "../Buttons/SecondaryButton/SecondaryButton";
 import { CartContext } from "../../Contexts/CartContextProvider";
 
 export default function WishlistCard({ product, handleRemoveWishlistItems }) {
@@ -36,7 +35,10 @@ export default function WishlistCard({ product, handleRemoveWishlistItems }) {
         <span className="price">₹{discountPrice}</span>
         <span className="price actualPrice">₹{actualPrice}</span>
         <span className="price discountPercentage">{discountPercentage}%</span>
-        <SecondaryButton clickHandler={moveToCart} name="Move To Cart" />
+        <br />
+        <button className="moveToCartBtn" onClick={moveToCart}>
+          Move To Cart
+        </button>
       </div>
     </div>
   );

@@ -7,7 +7,6 @@
     border: 1px solid rgb(205, 211, 216);
     background-color: white;
     margin: 1rem 1.25rem;
-    height: auto;
 }
 .item{
     display: flex;
@@ -78,7 +77,6 @@
     padding: 0.75rem 1rem;
     overflow: hidden;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
-    max-height: 380px;
 }
 .hr2{
     border-top: 1px dashed rgb(205, 211, 216);

@@ -5,7 +5,7 @@ import "./App.css";
 import Home from "./Pages/HomePage/Home";
 import ProductsListPage from "./Pages/ProductsListPage/ProductsList";
 import ProductDetailPage from "./Pages/ProductDetailPage/ProductDetailPage";
-import CartItems from "./Pages/CartItemsPage/CartItems";
+import Cart from "./Pages/CartItemsPage/Cart";
 import WishlistPage from "./Pages/WishlistPage/WishlistPage";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
@@ -21,7 +21,7 @@ function App() {
           <Route path="/products" element={<ProductsListPage />} />
           {/*<Route path="/products/:categoryId" element={<ProductsListPage />} >*/}
           <Route path="/products/:productId" element={<ProductDetailPage />} />
-          <Route path="/cart" element={<CartItems />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/wishlist" element={<WishlistPage />} />
         </Routes>
       </div>
