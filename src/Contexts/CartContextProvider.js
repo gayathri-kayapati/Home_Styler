@@ -11,7 +11,8 @@ export default function CartContextProvider({ children }) {
   }, [cart]);
 
   // export default function CartContextProvider({ children }) {
-  //     const [cart, setCart] = useState([]);
+  //   const [cart, setCart] = useState([]);
+  //
   //   const getCartData = async () => {
   //     try {
   //       const response = await fetch("/api/user/cart");
@@ -25,6 +26,9 @@ export default function CartContextProvider({ children }) {
   //   useEffect(() => {
   //     getCartData();
   //   }, []);
+  //   const handleCartItems = (product) => {
+  //     setCart([...cart, product]);
+  //   };
   return (
     <div>
       <CartContext.Provider value={{ cart, handleCartItems }}>

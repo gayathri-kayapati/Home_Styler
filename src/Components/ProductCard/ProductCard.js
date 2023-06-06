@@ -20,9 +20,9 @@ export default function ProductCard({ product }) {
       <div className="productDescription">
         <h3 className="title">{title}</h3>
         <p className="subDescription">{description}</p>
-        <span className="price">{discountPrice}</span>
-        <span className="price actualPrice">{actualPrice}</span>
-        <span className="price discountPercentage">{discountPercentage}</span>
+        <span className="price">₹{discountPrice}</span>
+        <span className="price actualPrice">₹{actualPrice}</span>
+        <span className="price discountPercentage">{discountPercentage}%</span>
       </div>
     </div>
   );

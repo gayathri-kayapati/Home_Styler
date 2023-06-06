@@ -17,7 +17,7 @@ export default function ProductDetailPage() {
     products.find((product) => product.id === productId);
 
   const redirectToCart = () => {
-    navigate("/cart");
+    navigate("/cartItems");
   };
   const isAlredyInCart = (cart, product) =>
     cart.find(({ id }) => id === product.id);
@@ -40,12 +40,14 @@ export default function ProductDetailPage() {
               {product.rating}
               <AiFillStar className="star" />
             </h4>
-            <span className="price discountPrice">{product.discountPrice}</span>
+            <span className="price discountPrice">
+              ₹{product.discountPrice}
+            </span>
             <span className="price discountPercentage">
-              {product.discountPercentage} Off
+              {product.discountPercentage}% Off
             </span>
             <br />
-            <span className="price actualPrice">{product.actualPrice}</span>
+            <span className="price actualPrice">₹{product.actualPrice}</span>
             <span className="taxs">Inclusive of all taxes</span>
             {isAlredyInCart(cart, product) ? (
               <PrimaryButton

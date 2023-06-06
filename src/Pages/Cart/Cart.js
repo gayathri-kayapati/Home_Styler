@@ -3,14 +3,12 @@ import { useNavigate } from "react-router-dom";
 
 import "./cart.css";
 import { CartContext } from "../../Contexts/CartContextProvider";
-import ProductCard from "../../Components/ProductCard/ProductCard";
 import PrimaryButton from "../../Components/Buttons/PrimaryButton/PrimaryButton";
-import SecondaryButton from "../../Components/Buttons/SecondaryButton/SecondaryButton";
+import CartItems from "../CartItemsPage/CartItems";
 
 export default function Cart() {
   const navigate = useNavigate();
   const { cart } = useContext(CartContext);
-  console.log(cart);
   const handlerToBack = () => {
     navigate("/products/");
   };
@@ -27,12 +25,7 @@ export default function Cart() {
       )}
       {cart?.map((product, idx) => (
         <div key={idx}>
-          <ProductCard product={product} />
-          <SecondaryButton
-            // clickHandler={()=>handleWishlistItems(product)}
-            className="wishlistBtn"
-            name="Move to Wishlist"
-          />
+          <CartItems />
         </div>
       ))}
     </div>
