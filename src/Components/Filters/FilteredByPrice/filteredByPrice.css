@@ -1,0 +1,13 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    border:1px solid lightgray;
+    max-width: 250px;
+    align-items: flex-start;
+    padding: 40px;
+    margin:auto;
+}
+label{
+    line-height: 32px;
+
+}

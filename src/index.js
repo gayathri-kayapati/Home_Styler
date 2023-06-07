@@ -17,12 +17,16 @@ import CartContextProvider, {
 import WishlistContextProvider, {
   WishlistContext,
 } from "./Contexts/WishlistContextProvider";
+import FilterContextProvider, {
+  FilterContext,
+} from "./Contexts/FilterContextProvider";
 // Call make Server
 makeServer();
 export { ProductsData };
 export { CategoriesData };
 export { CartContext };
 export { WishlistContext };
+export { FilterContext };
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -31,7 +35,9 @@ root.render(
       <CategoriesDataProvider>
         <CartContextProvider>
           <WishlistContextProvider>
-            <App />
+            <FilterContextProvider>
+              <App />
+            </FilterContextProvider>
           </WishlistContextProvider>
         </CartContextProvider>
       </CategoriesDataProvider>
