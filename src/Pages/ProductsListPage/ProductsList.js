@@ -11,7 +11,8 @@ import { FilterContext } from "../../Contexts/FilterContextProvider";
 export default function ProductsListPage() {
   const navigate = useNavigate();
   const { products } = useContext(ProductsData);
-  const { category, rating, sortedBy } = useContext(FilterContext);
+  const { category, rating, sortedBy, handlingClearFilters } =
+    useContext(FilterContext);
   const [filteredProducts, setFilteredProducts] = useState(products);
   const redirect = (id) => {
     navigate(`/products/${id}`);
@@ -48,10 +49,7 @@ export default function ProductsListPage() {
   useEffect(() => {
     setFilteredProducts(products);
   }, [products]);
-  const handlingClearFilters = () => {
-    let temp = [...filteredProducts];
-    setFilteredProducts(temp);
-  };
+
   return (
     <div className="page">
       <div className="productsListPage">

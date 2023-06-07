@@ -14,9 +14,14 @@ export default function FilterContextProvider({ children }) {
   const sortByHandler = (sortType) => {
     setSortBy(sortType);
   };
+  const handlingClearFilters = () => {
+    setSortBy("");
+    setCategory([]);
+    setRating(0);
+  };
 
-  const categoryChangeHandler = (e, categoryName) => {
-    if (e.target.checked) {
+  const categoryChangeHandler = (flag, categoryName) => {
+    if (flag) {
       const newCategories = [...category];
       newCategories.push(categoryName);
       setCategory(newCategories);
@@ -35,6 +40,7 @@ export default function FilterContextProvider({ children }) {
           category,
           rating,
           sortedBy,
+          handlingClearFilters,
         }}
       >
         {children}
