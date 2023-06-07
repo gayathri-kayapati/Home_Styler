@@ -5,10 +5,13 @@ import "./App.css";
 import Home from "./Pages/HomePage/Home";
 import ProductsListPage from "./Pages/ProductsListPage/ProductsList";
 import ProductDetailPage from "./Pages/ProductDetailPage/ProductDetailPage";
-import Cart from "./Pages/CartItemsPage/Cart";
+import Cart from "./Pages/CartPage/Cart";
 import WishlistPage from "./Pages/WishlistPage/WishlistPage";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
+import FilteredByCategory from "./Components/Filters/FilteredByCategory/FilteredByCategory";
+import FilteredByRating from "./Components/Filters/FilterdByRating/FilteredByRating";
+import FilteredByPrice from "./Components/Filters/FilteredByPrice/FilteredByPrice";
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
           <Route path="/products/:productId" element={<ProductDetailPage />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/wishlist" element={<WishlistPage />} />
+          <Route path="/filteredByCategory" element={<FilteredByCategory />} />
+          <Route path="/filteredByRating" element={<FilteredByRating />} />
+          <Route path="/filteredByPrice" element={<FilteredByPrice />} />
         </Routes>
       </div>
       <div>

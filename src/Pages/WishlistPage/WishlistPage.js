@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 import { useContext } from "react";
+import "./wishlistPage.css";
 import WishlistCard from "../../Components/WishlistCard/WishlistCard";
 import { WishlistContext } from "../../Contexts/WishlistContextProvider";
 import PrimaryButton from "../../Components/Buttons/PrimaryButton/PrimaryButton";
@@ -21,12 +22,14 @@ export default function WishlistPage() {
           <PrimaryButton clickHandler={handlerToBack} name="Back to shopping" />
         </>
       )}
-      {wishlist?.map((product) => (
-        <WishlistCard
-          product={product}
-          handleRemoveWishlistItems={handleRemoveWishlistItems}
-        />
-      ))}
+      <div className="wishlistContainer">
+        {wishlist?.map((product) => (
+          <WishlistCard
+            product={product}
+            handleRemoveWishlistItems={handleRemoveWishlistItems}
+          />
+        ))}
+      </div>
     </div>
   );
 }
