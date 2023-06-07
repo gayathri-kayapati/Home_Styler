@@ -40,7 +40,7 @@ export const products = [
     image: lighting,
     title: "MFD HOME FURNISHING",
     description: "H-L - 5552-3P Glass",
-    rating: 5.0,
+    rating: 3.5,
     discountPrice: 3360,
     actualPrice: 8400,
     discountPercentage: 60,
@@ -53,11 +53,11 @@ export const products = [
     image: cookWare,
     title: "Zyliss",
     description: "Ultimate Pro 24cm Frying Pan with Por spout",
-    rating: 4.0,
+    rating: 1.0,
     discountPrice: 8460,
     actualPrice: 9400,
     discountPercentage: 10,
-    categoryName: "Kichen & Dinning",
+    categoryName: "Kitchen & Dining",
     details:
       "Zyliss best cookware yet! Zyliss 24cm frying pan feature advanced ALPINE CRYSTALS non-stick Swiss technology that delivers superior non-stick performance and healthier cooking, eliminating the need for oil or butter. With the hard anodized body, Zyliss Ultimate PRO Frying Pans are reliable, designed to withstand everyday use and safe for use with metal tools.Zyliss Swiss-engineered PFAO free non-stick coating: nothing sticks and no oil or butter needed!With a durable hard-anodized body, this professional frying pan is hard wearing and safe for use with metal tools.The stainless steel induction base is suitable for all hobs, including induction.Ergonomic, stainless steel handle for a durable and comfortable grip, and oven safe up to 230°C/450°F.Pouring spout for convenient transfer of liquids, such as fats, oils, or sauces.",
   },
@@ -66,7 +66,7 @@ export const products = [
     image: candles,
     title: "Novo Koyo",
     description: "God's Plan Travel Tin Candle",
-    rating: 4.5,
+    rating: 2.5,
     discountPrice: 1100,
     actualPrice: 1210,
     discountPercentage: 10,
@@ -110,7 +110,7 @@ export const products = [
     discountPrice: 5500,
     actualPrice: 6600,
     discountPercentage: 20,
-    categoryName: "Kichen & Dinning",
+    categoryName: "Kitchen & Dining",
     details:
       "Transform your dinners into luxurious affairs with this serving spoon set. The perfect accessories for your formal or informal dinner parties.",
   },
@@ -137,7 +137,7 @@ export const products = [
     discountPrice: 1200,
     actualPrice: 1999,
     discountPercentage: 40,
-    categoryName: "Kichen & Dinning",
+    categoryName: "Kitchen & Dining",
     details:
       "Saral home premium quality polyester viscose fabric made 6 pieces place mat and 1 piece runner give your dining table a decorative look and protect your table from Water Marks, Heat, Spills, Stains and Scratches. Size of runner is 33x120 cm and Size of place mat is 33x45 cm.",
   },
@@ -176,7 +176,7 @@ export const products = [
     discountPrice: 899,
     actualPrice: 988,
     discountPercentage: 10,
-    categoryName: "Home essentials",
+    categoryName: "Home Essentials",
     details:
       "A simple way to keep a healing stone close to you is to hang in a keychain. Be it on your desk drawer or car keys, it'll ensure you are receiving the vibrations all day. Agate can work wonders in bringing balance and harmony to your life. Welcome peace and balance to your house, car, office or personal life wherever you decide to use this gemstone keychain. Agate properties bring positive vibes and are irresistibly beautiful to own. It also makes for a thoughtful gift for your loved ones. Note: Each stone forms its own unique pattern over thousands of years inside the earth. No two stones look the same so what you possess belongs purely to you and you alone.Our agate product has been subtly dyed to enhance this texture, and carefully electroplated(not gold leaf or gilded, which may rub off) to highlight its beauty.",
   },
@@ -203,7 +203,7 @@ export const products = [
     discountPrice: 425,
     actualPrice: 499,
     discountPercentage: 15,
-    categoryName: "Kichen & Dinning",
+    categoryName: "Kitchen & Dining",
     details:
       "Eco Bite lunch from Cello stainless steel lunch boxes range will keep your food hot. It has 3 round stainless steel containers which is 100 percent leak - proof. This is ideal for office, schools and colleges. The lunch boxes are easy to clean and maintain, making them ideal for everyday use.",
   },
@@ -216,7 +216,7 @@ export const products = [
     discountPrice: 999,
     actualPrice: 1699,
     discountPercentage: 41,
-    categoryName: "Home essentials",
+    categoryName: "Home Essentials",
     details:
       "Start the new year fresh and get a few steps closer to accomplishing your goals with our 2023 planner. Inside you'll also find monthly and weekly views, colourful habit trackers, inspirational quotes, and a pocket for storing a few things. It also contains 3 sheets of stickers, including a page of gold foiled stickers for extra fun. The planner comes in a gorgeous keepsake box.",
   },
@@ -243,7 +243,7 @@ export const products = [
     discountPrice: 2600,
     actualPrice: 3120,
     discountPercentage: 20,
-    categoryName: "Kichen & Dinning",
+    categoryName: "Kitchen & Dining",
     details:
       "Enrich your dining experience with the alluring hues of greens, embossed with pink blossoms and accentuated with gold details. The victorian dessert stand, an ode to nature is a symbol of utmost grace and sophistication. Display delicious brownies, pastries and muffins or mouth-watering barfi and gajjak in our unique floral shaped tableware range!",
   },
@@ -295,7 +295,7 @@ export const products = [
     discountPrice: 654,
     actualPrice: 688,
     discountPercentage: 5,
-    categoryName: "Home essentials",
+    categoryName: "Home Essentials",
     details:
       "Get snipping with these grey scissors from Waabi Saabi. Made with the finest quality material, it has a sturdy design that helps you to cut through things with ease and accuracy.",
   },
@@ -308,7 +308,7 @@ export const products = [
     discountPrice: 21903,
     actualPrice: 35900,
     discountPercentage: 39,
-    categoryName: "Kichen & Dinning",
+    categoryName: "Kitchen & Dining",
     details:
       " 1.The Exceptional Truedetect 3D Technology: Truedetect3D Object Avoidance Technology Is Based On 3D Structured Light Technology. 2.Truemapping System: Truemapping Laser-Based Mapping And Navigation Technology, An Aerospace-Standard Detection Technology First Adopted For This Function In The Industry By Ecovacs, Floor Maps Can Be Created In Seconds To Improve Overall Cleaning Efficiency. 3. Multi-Floor Mapping: Deebot Can Now Save Up To 3 Different Maps Perfect For Multi-Level Homes And Multiple Cleaning Spaces. When Deebot Starts To Clean, It Will Automatically Recognize The Saved Area It Is Going To Clean. Up To 180 Minute Runtime A Longer Battery Life ",
   },
@@ -335,7 +335,7 @@ export const products = [
     discountPrice: 4299,
     actualPrice: 10000,
     discountPercentage: 57,
-    categoryName: "Kichen & Dinning",
+    categoryName: "Kitchen & Dining",
     details:
       "Individual pan supports cook for the entire family with ease. Highefficiency 4 brass burners offers fuel saving efficiency, uniform heating and faster cooking. High quality thick toughened black glass top convenient to clean and maintain. Compact design and manual ignition. Cast aluminium mixing tube does not rust, offers unobstructed LPG flow with smooth functioning.Material: Brass Burners, Toughened Glass, Stainless Steel Ring",
   },

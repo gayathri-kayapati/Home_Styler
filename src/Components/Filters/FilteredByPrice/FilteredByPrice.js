@@ -3,8 +3,7 @@ import { useContext } from "react";
 import { FilterContext } from "../../../Contexts/FilterContextProvider";
 
 export default function FilteredByPrice() {
-  const { sortByLowToHighPrice, sortByHighToLowPrice } =
-    useContext(FilterContext);
+  const { sortByHandler } = useContext(FilterContext);
   return (
     <div className="Container">
       <h4>Sort by Price</h4>
@@ -13,8 +12,8 @@ export default function FilteredByPrice() {
           type="radio"
           id="1"
           name="price"
-          value="1"
-          onChange={sortByLowToHighPrice}
+          value="asc"
+          onChange={() => sortByHandler("asc")}
         />
         <label htmlFor="Low - High"> Low - High </label>
       </div>
@@ -24,8 +23,8 @@ export default function FilteredByPrice() {
           type="radio"
           id="2"
           name="price"
-          value="2"
-          onChange={sortByHighToLowPrice}
+          value="desc"
+          onChange={() => sortByHandler("desc")}
         />
         <label htmlFor="High - Low"> High - Low </label>
       </div>

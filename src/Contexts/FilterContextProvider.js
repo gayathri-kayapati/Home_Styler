@@ -6,28 +6,15 @@ export const FilterContext = createContext();
 
 export default function FilterContextProvider({ children }) {
   const [category, setCategory] = useState([]);
-  const [filteredProducts, setFilteredProducts] = useState([]);
-  const [sortedData, setSortedData] = useState([]);
+  const [rating, setRating] = useState(0);
+  const [sortedBy, setSortBy] = useState("");
   const ratingChangeHandler = (e) => {
-    if (e.target.checked) {
-      const newFilteredProducts = filteredProducts.filter(
-        (product) => product.rating >= e.target.value
-      );
-      setFilteredProducts(newFilteredProducts);
-    } else {
-      const newFilteredProducts = [...filteredProducts];
-      setFilteredProducts(newFilteredProducts);
-    }
+    setRating(e);
   };
-  useEffect(() => {
-    console.log(filteredProducts);
-  }, [filteredProducts]);
-  const sortByLowToHighPrice = () => {
-    setSortedData(products.sort((a, b) => a.discountPrice - b.discountPrice));
+  const sortByHandler = (sortType) => {
+    setSortBy(sortType);
   };
-  const sortByHighToLowPrice = () => {
-    setSortedData(products.sort((a, b) => b.discountPrice - a.discountPrice));
-  };
+
   const categoryChangeHandler = (e, categoryName) => {
     if (e.target.checked) {
       const newCategories = [...category];
@@ -43,11 +30,11 @@ export default function FilterContextProvider({ children }) {
       <FilterContext.Provider
         value={{
           ratingChangeHandler,
-          sortByLowToHighPrice,
-          sortByHighToLowPrice,
           categoryChangeHandler,
+          sortByHandler,
           category,
-          filteredProducts,
+          rating,
+          sortedBy,
         }}
       >
         {children}
