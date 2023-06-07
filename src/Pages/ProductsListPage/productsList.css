@@ -10,3 +10,14 @@
   display: flex;
   justify-content: center;
 }
+.filtersHeading{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.clearbtn{
+  padding: 5px;
+  border:none;
+  background-color: transparent;
+  font-size: medium;
+}
