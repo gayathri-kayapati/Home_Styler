@@ -18,10 +18,13 @@ export default function Cart() {
     handleIncreaseQuantity,
     handleDecreaseQuantity,
   } = useContext(CartContext);
-  const { handleWishlistItems } = useContext(WishlistContext);
+  const { wishlist, handleWishlistItems, handleRemoveWishlistItems } =
+    useContext(WishlistContext);
   const handlerToBack = () => {
     navigate("/products/");
   };
+  const isAlreadyInWishlist = (product) =>
+    wishlist.find((item) => item.id === product.id);
   const totalActualPrice = cart.reduce(
     (sumOfActualPrice, product) =>
       sumOfActualPrice + product.quantity * product.actualPrice,
@@ -99,15 +102,25 @@ export default function Cart() {
                     </div>
                     <span>
                       <SecondaryButton
-                        onClick={handleRemoveCartItem}
+                        clickHandler={(e) => {
+                          e.stopPropagation();
+                          handleRemoveCartItem(product);
+                        }}
                         name="Remove"
                       />
                     </span>
                     <span>
-                      <SecondaryButton
-                        onclick={() => handleWishlistItems}
-                        name="Move to Wishlist"
-                      />
+                      {isAlreadyInWishlist(product) ? (
+                        <SecondaryButton name=" Alredy in wishlist" />
+                      ) : (
+                        <SecondaryButton
+                          clickHandler={(e) => {
+                            e.stopPropagation();
+                            handleWishlistItems(product);
+                          }}
+                          name="Add to Wishlist"
+                        />
+                      )}
                     </span>
                   </div>
                 </div>

@@ -18,7 +18,9 @@ export default function FilteredByCategory() {
               name="category"
               value={categoryName}
               checked={category.includes(categoryName)}
-              onChange={(e) => categoryChangeHandler(e, categoryName)}
+              onChange={(e) =>
+                categoryChangeHandler(e.target.checked, categoryName)
+              }
             />{" "}
             {categoryName}
           </label>
